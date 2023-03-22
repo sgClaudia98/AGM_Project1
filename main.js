@@ -69,7 +69,7 @@ scene.background = backgorundColor;
 let hand;
 function addHand() {
   var loader = new GLTFLoader();
-  loader.load('assets/hand_low_poly/hand.gltf', function (gltf) {
+  loader.load('./assets/hand_low_poly/hand.gltf', function (gltf) {
     hand = gltf.scene;
     hand.position.z = -5;
     hand.position.x = 2;
@@ -91,19 +91,19 @@ function addSocial(path, position, geometry, rotateY) {
   return mesh;
 }
 var geometryBox = new THREE.BoxGeometry(3, 1.7, 1);
-const webGL = addSocial('assets/webgl.png', { x: 10, y: -1, z: 5 }, geometryBox, -1.4)
+const webGL = addSocial('./assets/webgl.png', { x: 10, y: -1, z: 5 }, geometryBox, -1.4)
 scene.add(webGL);
 
 geometryBox = new THREE.BoxGeometry(2, 1, 0.5);
-const vuejs = addSocial('assets/01-vuejs.jpg', { x: 15, y: -0.85, z: 9.8 }, geometryBox, -1.5)
+const vuejs = addSocial('./assets/01-vuejs.jpg', { x: 15, y: -0.85, z: 9.8 }, geometryBox, -1.5)
 scene.add(vuejs)
 
 geometryBox = new THREE.BoxGeometry(3, 1.7, 1);
-const html5 = addSocial('assets/HTML5.png', { x: 15, y: -4, z: 9 }, geometryBox, -1.4)
+const html5 = addSocial('./assets/HTML5.png', { x: 15, y: -4, z: 9 }, geometryBox, -1.4)
 scene.add(html5)
 
 geometryBox = new THREE.BoxGeometry(2, 1, 0.5);
-const react = addSocial('assets/react-logo.jpg', { x: 6, y: 1, z: 10.2 }, geometryBox, -1.8)
+const react = addSocial('./assets/react-logo.jpg', { x: 6, y: 1, z: 10.2 }, geometryBox, -1.8)
 scene.add(react)
 
 const socials = [webGL, vuejs, html5, react]

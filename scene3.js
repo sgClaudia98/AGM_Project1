@@ -30,17 +30,17 @@ scene.add(carousel);
 
 // Load the 3D objects
 var loader = new GLTFLoader();
-loader.load('assets/Low-Poly-Racing-Car.gltf', function (object1) {
+loader.load('./assets/Low-Poly-Racing-Car.gltf', function (object1) {
     object1.scene.position.set(-2, 0, 0);
     carousel.add(object1.scene);
 });
 
-loader.load('assets/hand_low_poly/hand.gltf', function (object2) {
+loader.load('./assets/hand_low_poly/hand.gltf', function (object2) {
     object2.scene.position.set(0, 0, 0);
     carousel.add(object2.scene);
 });
 
-loader.load('assets/Low-Poly-Racing-Car.gltf', function (object3) {
+loader.load('./assets/Low-Poly-Racing-Car.gltf', function (object3) {
     object3.scene.position.set(2, 0, 0);
     carousel.add(object3.scene);
 });
