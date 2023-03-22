@@ -1,0 +1,173 @@
+@import url("https://use.typekit.net/jmk3xov.css");
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+
+:root {
+  --dark-bg-transp: rgba(29, 29, 29, 0.6);
+  --dark-bg: rgba(29, 29, 29, 1);
+  --spacing: 350px;
+
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+main {
+  color: white;
+  z-index: 99;
+  position: absolute;
+  margin: 0px auto;
+  padding: 120px 5rem;
+  padding-bottom: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+h1, h2, h3, blockquote {
+  font-family: elevon, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: xx-large;
+}
+
+h3 {
+  margin-top: 3rem;
+}
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+blockquote, 
+section, 
+header {
+  border-radius: 2.5rem;
+  width: 40%;
+  background: var(--dark-bg-transp);
+  backdrop-filter: blur(10px);
+}
+
+  header {
+    grid-column: 2 / span 5;
+    font-size: 2.5rem;
+    padding: 2rem;
+    margin-bottom: var(--spacing);
+  }
+
+
+  section {
+    padding: 0 80px ;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: 1.5rem;
+  }
+
+  blockquote {
+    border-radius: 1.5rem;
+    margin: 0;
+    padding: 30px;
+    grid-column: 2 / span 9;
+    margin-bottom: var(--spacing);
+  }
+
+  blockquote p {
+    font-size: 2rem;
+    display: inline;
+    line-height: 1.2;
+  }
+
+  .left {
+    grid-column: 6 / 12;
+  }
+
+  .mb-lg {
+    margin-bottom: 15vh;
+  }
+
+  .h-md {
+    min-height: 40vh;
+  }
+  ul {
+    margin: 50px 10px; 
+  }
+  li {
+    padding: 10px 0;
+    font-size: 2rem;
+  }
+
+  .red {
+    background-color: honeydew;
+    color: brown;
+  }
+  .mb-none {
+    margin-bottom: 0;
+  }
+
+  #scene2 {
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    font-size: xx-large;
+    margin: 0 -5rem;
+    padding-bottom: 5rem;
+    width: 100%;
+    border-radius: 0;
+    background-color: var(--dark-bg-transp);
+  }
+
+  #scene2 > h1 {
+    z-index: 1000;
+  }
+
+  #scene2-body {
+    width: 100%;
+    height: 75vh;
+    border: 5px black solid;
+  }
+
+  #scene2-body > canvas {
+    position: inherit !important;
+  }
+
+  button {
+
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 13px 23px;
+    border: 1px solid #222222;
+    transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s, -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s;
+    background: #fff;
+    color: #222222;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+
+  }
+  button:hover {
+    border-color: #000000;
+    background: #f7f7f7;
+}
+
+button[hidden] {
+  display: none;
+}
+
+.invisible {
+
+  visibility: hidden;
+}
