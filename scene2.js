@@ -36,21 +36,21 @@ var objects = [];
 async function loadObjects() {
     var loader = new GLTFLoader();
 
-    await loader.loadAsync('/assets/CartoonTree.gltf').then(object => {
+    await loader.loadAsync('assets/CartoonTree.gltf').then(object => {
         object.scene.position.set(-2, -0.2, 0);
         object.scene.scale.set(0.18, 0.18, 0.18)
         objects.push(object.scene)
         sliderContainer.add(object.scene);
     });
 
-    await loader.loadAsync('/assets/Mill.gltf').then(object => {
+    await loader.loadAsync('assets/Mill.gltf').then(object => {
         object.scene.position.set(0, -0.2, 0);
         object.scene.rotation.set(0, 0.8, 0)
         objects.push(object.scene)
         sliderContainer.add(object.scene);
     });
 
-    await loader.loadAsync('/assets/Low-Poly-Racing-Car.gltf').then(object => {
+    await loader.loadAsync('assets/Low-Poly-Racing-Car.gltf').then(object => {
         object.scene.position.set(2, -0.4, 0);
         object.scene.scale.set(0.7, 0.7, 0.7)
         object.scene.rotation.set(0, 4, 0)
