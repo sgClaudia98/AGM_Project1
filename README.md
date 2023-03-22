@@ -9,7 +9,18 @@
 ```
 git clone <this-repo>
 npm install
+```
+
+Develop realtime update
+
+```
 npm run dev
+```
+
+Build to docs folder
+
+```
+npm run build
 ```
 
 ## References
